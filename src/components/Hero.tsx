@@ -3,41 +3,39 @@ import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="bg-gradient-to-r from-nsbank-dark via-nsbank to-nsbank-light text-white py-16 md:py-24">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold">
-              Финансовые решения для вашего будущего
+    <section className="bg-nsbank text-white">
+      <div className="container mx-auto px-4 py-12 md:py-16">
+        <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div>
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+              Финансы на вашей стороне с NS Bank
             </h1>
-            <p className="text-lg md:text-xl opacity-90">
-              NS Bank предлагает выгодные условия кредитования, 
-              высокие ставки по вкладам и удобный онлайн-банкинг.
+            <p className="text-lg mb-8 opacity-90">
+              Выгодные условия по кредитам, высокие ставки по вкладам и современный интернет-банк
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="bg-white text-nsbank hover:bg-opacity-90 text-base py-6 px-8">
+              <Button size="lg" className="bg-white text-nsbank hover:bg-gray-100">
                 Открыть счёт
               </Button>
-              <Button variant="outline" className="border-white text-white hover:bg-white hover:text-nsbank text-base py-6 px-8">
-                Подробнее <ArrowRight className="ml-2" size={16} />
+              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+                Узнать больше <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </div>
-          </div>
-          <div className="hidden md:block relative">
-            <div className="relative z-10 bg-white p-6 rounded-2xl shadow-xl transform rotate-3 max-w-sm ml-auto">
-              <div className="h-10 w-16 rounded-md bg-nsbank mb-4"></div>
-              <div className="h-6 w-3/4 bg-gray-200 rounded mb-2"></div>
-              <div className="h-4 w-1/2 bg-gray-200 rounded mb-4"></div>
-              <div className="grid grid-cols-4 gap-2">
-                <div className="h-8 w-full bg-gray-200 rounded"></div>
-                <div className="h-8 w-full bg-gray-200 rounded"></div>
-                <div className="h-8 w-full bg-gray-200 rounded"></div>
-                <div className="h-8 w-full bg-gray-200 rounded"></div>
-              </div>
-              <div className="mt-8 mb-2 h-6 w-2/3 bg-gray-200 rounded"></div>
-              <div className="h-12 w-full bg-nsbank rounded-md"></div>
+            <div className="mt-8">
+              <p className="text-sm">
+                Телефон горячей линии: <strong>+7 (980) 188 144 62-06</strong>
+              </p>
+              <p className="text-sm mt-1">
+                Email: <strong>info@nsbank.ru</strong>
+              </p>
             </div>
-            <div className="absolute top-12 left-0 bg-white p-6 rounded-2xl shadow-xl transform -rotate-6 max-w-sm opacity-50"></div>
+          </div>
+          <div className="hidden md:block">
+            <img 
+              src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=500&q=80" 
+              alt="NS Bank карты" 
+              className="rounded-lg shadow-lg"
+            />
           </div>
         </div>
       </div>
