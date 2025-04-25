@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Facebook, Twitter, Instagram, Youtube, MapPin, Phone, Mail } from "lucide-react";
+import { Facebook, Twitter, Instagram, Youtube, MapPin, Phone, Mail, Send } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -14,7 +14,7 @@ const Footer = () => {
               <span className="text-white font-bold text-xl">NS Bank</span>
             </div>
             <p className="text-gray-300 mb-6">
-              Лицензия ЦБ РФ №1234 от 01.01.2025
+              Лицензия ЦБ РФ №529542 от 25.06.2021
             </p>
             <div className="flex gap-4">
               <a href="#" className="text-gray-300 hover:text-white">
@@ -28,6 +28,9 @@ const Footer = () => {
               </a>
               <a href="#" className="text-gray-300 hover:text-white">
                 <Youtube size={20} />
+              </a>
+              <a href="https://t.me/NS_Nikotos" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white">
+                <Send size={20} />
               </a>
             </div>
           </div>
@@ -68,6 +71,10 @@ const Footer = () => {
               <li className="flex items-center gap-3">
                 <Mail size={18} className="text-nsbank flex-shrink-0" />
                 <span className="text-gray-300">info@nsbank.ru</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <Send size={18} className="text-nsbank flex-shrink-0" />
+                <a href="https://t.me/NS_Nikotos" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white">t.me/NS_Nikotos</a>
               </li>
             </ul>
           </div>

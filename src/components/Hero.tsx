@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Send } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -27,6 +27,15 @@ const Hero = () => {
               </p>
               <p className="text-sm mt-1">
                 Email: <strong>info@nsbank.ru</strong>
+              </p>
+              <p className="text-sm mt-2 flex items-center">
+                <Send className="mr-1 h-4 w-4" />
+                <a href="https://t.me/NS_Nikotos" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                  <strong>t.me/NS_Nikotos</strong>
+                </a>
+              </p>
+              <p className="text-sm mt-3 opacity-80">
+                Лицензия ЦБ РФ №529542 от 25.06.2021
               </p>
             </div>
           </div>
